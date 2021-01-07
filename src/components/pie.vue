@@ -68,7 +68,7 @@ function genOption (chartData, colors) {
       clockWise: false,
       hoverAnimation: false,
       radius: [75 - i * 15 + '%', 68 - i * 15 + '%'],
-      center: ['40%', '25%'],
+      center: ['40%', '37%'],
       label: {
         show: false
       },
@@ -92,7 +92,7 @@ function genOption (chartData, colors) {
       clockWise: false, // 顺时加载
       hoverAnimation: false, // 鼠标移入变大
       radius: [75 - i * 15 + '%', 68 - i * 15 + '%'],
-      center: ['40%', '25%'],
+      center: ['40%', '37%'],
       label: {
         show: false
       },
