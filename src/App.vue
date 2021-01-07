@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div><Test /></div>
+    <div><Pie /></div>
     <div>2</div>
     <div>3</div>
     <div>4</div>
@@ -14,17 +14,18 @@
 </template>
 
 <script>
-import Test from './components/test'
+import Pie from './components/pie/index'
 export default {
   name: 'App',
   components: {
-    Test
+    Pie
   }
 }
 </script>
 
 <style lang="scss" scoped>
 #app {
+  background: #ccc;
   padding: 20px;
   width: 100vw;
   height: 100vh;
@@ -33,7 +34,7 @@ export default {
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   box-sizing: border-box;
-  div {
+  & > div {
     border: 1px solid #000;
     display: flex;
     align-items: center;
