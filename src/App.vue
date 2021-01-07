@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div><Test /></div>
-    <div>2</div>
+    <div><Lines /></div>
     <div>3</div>
     <div>4</div>
     <div>5</div>
@@ -15,10 +15,11 @@
 
 <script>
 import Test from './components/test'
+import Lines from './components/line'
 export default {
   name: 'App',
   components: {
-    Test
+    Test, Lines
   }
 }
 </script>
