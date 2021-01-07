@@ -144,7 +144,6 @@ export default {
   mounted () {
     this.chart = this.$echarts.init(document.getElementById('pie'))
     const option = genOption(this.chartData, this.colors)
-    console.log(option)
     this.chart.setOption(option)
   }
 }

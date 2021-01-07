@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Pie from './pie'
+import Pie from '@/components/pie'
 export default {
   components: { Pie },
   data () {

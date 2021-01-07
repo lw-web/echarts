@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Pie from './components/pie/index'
+import Pie from './views/pie'
 export default {
   name: 'App',
   components: {
@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 #app {
-  background: #ccc;
+  background: #C0E0FF;
   padding: 20px;
   width: 100vw;
   height: 100vh;
