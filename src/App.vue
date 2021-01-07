@@ -1,7 +1,9 @@
 <template>
   <div id="app">
+    <div><Lines /></div>
     <div><Pie /></div>
     <div><Guage /></div>
+    <div>3</div>
     <div>3</div>
     <div>4</div>
     <div>5</div>
@@ -16,15 +18,16 @@
 <script>
 import Pie from './views/pie'
 import Guage from './views/guage'
+import Lines from './components/line'
 export default {
   name: 'App',
   components: {
     Pie,
-    Guage
+    Guage,
+    Lines
   }
 }
 </script>
-
 <style lang="scss" scoped>
 #app {
   background: #C0E0FF;
