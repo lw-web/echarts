@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div>1</div>
+    <div><Test /></div>
     <div>2</div>
     <div>3</div>
     <div>4</div>
@@ -12,6 +12,16 @@
     <div>10</div>
   </div>
 </template>
+
+<script>
+import Test from './components/test'
+export default {
+  name: 'App',
+  components: {
+    Test
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 #app {
