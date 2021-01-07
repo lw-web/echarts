@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div><Pie /></div>
-    <div>2</div>
+    <div><Guage /></div>
     <div>3</div>
     <div>4</div>
     <div>5</div>
@@ -15,10 +15,12 @@
 
 <script>
 import Pie from './views/pie'
+import Guage from './views/guage'
 export default {
   name: 'App',
   components: {
-    Pie
+    Pie,
+    Guage
   }
 }
 </script>
