@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Guage from '@/components/guage'
+import Guage from '@/components/guage/guage1.vue'
 export default {
   components: { Guage },
   data () {

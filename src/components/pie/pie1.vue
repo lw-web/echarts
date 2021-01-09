@@ -155,27 +155,27 @@ export default {
   height: 100%;
   position: relative;
   #pie {
-    width: 60%;
-    height: 100%;
+    width: 270px;
+    height: 300px;
   }
   .yuandian {
     height: 10px;
     width: 10px;
     border-radius: 5px;
     position: absolute;
-    left: 90px;
-    top: 28px;
+    left: 115px;
+    top: 68px;
 
     &:nth-child(2) {
-      top: 46px;
+      top: 8px;
     }
 
     &:nth-child(3) {
-      top: 60px;
+      top: 28px;
     }
 
     &:nth-child(4) {
-      top: 76px;
+      top: 48px;
     }
   }
 
@@ -189,8 +189,8 @@ export default {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 66px;
-    top: 95px;
+    left: 90px;
+    top: 100px;
     color: white;
   }
 

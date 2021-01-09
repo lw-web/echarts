@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Pie from '@/components/pie'
+import Pie from '@/components/pie/pie1.vue'
 export default {
   components: { Pie },
   data () {
