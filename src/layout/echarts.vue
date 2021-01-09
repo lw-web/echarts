@@ -4,8 +4,8 @@
       <a-layout-sider theme='light' class="aside">
         <a-menu
           mode="inline"
-          :default-selected-keys="['pie']"
-          :defaultOpenKeys="['echarts']"
+          :default-selected-keys="[activePage]"
+          :defaultOpenKeys="[activeModule]"
           @click="handleClick"
           theme='light'
         >
@@ -24,6 +24,18 @@
 
 <script>
 export default {
+  data () {
+    return {
+      activeModule: 'echarts',
+      activePage: 'pie'
+    }
+  },
+  created () {
+    const [module, page] = this.$route.path.split('/').slice(1)
+    console.log(module, page)
+    this.activeModule = module
+    this.activePage = page
+  },
   methods: {
     handleClick ({ key }) {
       this.$router.push('/echarts/' + key)
