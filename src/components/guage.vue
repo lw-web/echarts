@@ -8,10 +8,10 @@ function genOption (data, colors) {
     backgroundColor: 'transparent',
     title: {
       text: '机动车检测合格率',
-      bottom: 30,
+      bottom: '20%',
       x: 'center',
       textStyle: {
-        color: '#ccd5ed',
+        color: '#333',
         fontSize: 14,
         fontWeight: 400
       }
@@ -24,26 +24,20 @@ function genOption (data, colors) {
         endAngle: '-30',
         splitNumber: 4,
         detail: {
-          offsetCenter: [0, 10],
+          offsetCenter: [0, '-15%'],
           formatter: `{a|${data * 100}}{c|%}`,
           rich: {
             a: {
-              color: '#fff',
+              color: '#333',
               lineHeight: 35,
-              fontSize: 23,
-              padding: [0, 0, -40, 0]
+              fontSize: 24,
+              padding: [0, 0, -30, 0]
             },
-
             c: {
-              color: '#fff',
-              fontSize: 18,
+              color: '#333',
+              fontSize: 14,
               fontWeight: 550,
               padding: [10, 0, -20, 0]
-            },
-            x: {
-              fontSize: 14,
-              color: '#e4ecff',
-              padding: [0, 0, 20, 0]
             }
           }
         },
@@ -54,7 +48,7 @@ function genOption (data, colors) {
           show: true,
           lineStyle: {
             color: colors,
-            width: 15
+            width: 25
           }
         },
         axisTick: {
@@ -62,21 +56,21 @@ function genOption (data, colors) {
         },
         splitLine: {
           show: true,
-          length: 20,
+          length: 15,
           lineStyle: {
-            color: '#12181f', // #244195
+            color: '#12181f',
             width: 4
           }
         },
-
         axisLabel: {
           show: false
-        }
+        },
+        data: [data]
       },
       {
         name: '白色圈刻度',
         type: 'gauge',
-        radius: '90%',
+        radius: '80%',
         startAngle: 210, // 刻度起始
         endAngle: -30, // 刻度结束
         min: 0,
@@ -95,7 +89,7 @@ function genOption (data, colors) {
         },
         axisLabel: {
           color: '#8391b7',
-          fontSize: 12
+          fontSize: 14
         }, // 刻度节点文字颜色
         pointer: {
           show: false
