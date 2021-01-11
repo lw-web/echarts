@@ -4,12 +4,29 @@
 <script>
 export default {
   name: 'line_chart',
+  props: {
+    chartData: {
+      type: Array,
+      default () {
+        return []
+      }
+    }
+  },
   mounted () {
     this.chart = this.$echarts.init(document.getElementById('line_chart'))
-    this.chart.setOption(this.linecharts())
+    this.chart.setOption(this.linecharts(this.chartData))
   },
   methods: {
-    linecharts () {
+    linecharts (chartData) {
+      const xname = []
+      const data1 = []
+      const data2 = []
+      // 数据处理
+      this.chartData.forEach((v, i) => {
+        xname.push(v.name)
+        data1.push(v.value1)
+        data2.push(v.value2)
+      })
       const option = {
         backgroundColor: '#080b30',
         title: {
@@ -73,7 +90,7 @@ export default {
             show: false
           },
           boundaryGap: false,
-          data: ['A', 'B', 'C', 'D', 'E', 'F']
+          data: xname
 
         }],
 
@@ -154,7 +171,7 @@ export default {
               shadowBlur: 20
             }
           },
-          data: [502.84, 205.97, 332.79, 281.55, 398.35, 214.02]
+          data: data1
         },
         {
           name: '注册总量',
@@ -208,7 +225,7 @@ export default {
               shadowBlur: 20
             }
           },
-          data: [281.55, 398.35, 214.02, 179.55, 289.57, 356.14]
+          data: data2
         }
         ]
       }
