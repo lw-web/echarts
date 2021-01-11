@@ -1,8 +1,6 @@
 <template>
-  <div class="pie">
-    <div><Pie3 /></div>
-    <div><Pie2 /></div>
-    <div><Pie1 /></div>
+  <div class="bar">
+    <div><Bar1 /></div>
     <div>2</div>
     <div>3</div>
     <div>4</div>
@@ -16,21 +14,17 @@
 </template>
 
 <script>
-import Pie3 from './pie3'
-import Pie2 from './pie2'
-import Pie1 from './pie1'
+import Bar1 from './bar1'
 export default {
-  name: 'Pie',
+  name: 'bar',
   components: {
-    Pie3,
-    Pie2,
-    Pie1
+    Bar1
   }
 }
 </script>
 <style lang="scss" scoped>
 @import '@/css/mixin.scss';
-.pie {
+.bar {
   @include echarts-layout;
   width: 100%;
   height: 100%;
