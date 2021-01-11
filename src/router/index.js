@@ -29,6 +29,11 @@ const routes = [
         path: 'guage',
         name: 'guage',
         component: () => import('@/views/guage/index.vue')
+      },
+      {
+        path: 'radar',
+        name: 'radar',
+        component: () => import('@/views/radar/index.vue')
       }
     ]
   }

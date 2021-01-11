@@ -14,6 +14,7 @@
             <a-menu-item key="pie">pie</a-menu-item>
             <a-menu-item key="line">line</a-menu-item>
             <a-menu-item key="guage">guage</a-menu-item>
+            <a-menu-item key="radar">radar</a-menu-item>
           </a-sub-menu>
         </a-menu>
       </a-layout-sider>
