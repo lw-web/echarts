@@ -1,5 +1,7 @@
 <template>
   <div class="line">
+    <div><Line3 /></div>
+    <div><Line2 /></div>
     <div><Line1 /></div>
     <div>2</div>
     <div>3</div>
@@ -14,10 +16,14 @@
 </template>
 
 <script>
+import Line3 from './line3'
+import Line2 from './line2'
 import Line1 from './line1'
 export default {
   name: 'LineComp',
   components: {
+    Line3,
+    Line2,
     Line1
   }
 }

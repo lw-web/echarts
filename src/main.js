@@ -5,6 +5,8 @@ import store from './store'
 import './css/index.scss'
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
+// import echarts from 'echarts'
+// import liquidfill from 'echarts-liquidfill'
 
 const echarts = require('echarts')
 Vue.prototype.$echarts = echarts
