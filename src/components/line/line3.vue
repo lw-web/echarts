@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// import { initOption as ioption } from 'liquidfillOptions.js'
 export default {
   name: 'Line3',
   props: {
@@ -18,7 +17,6 @@ export default {
   },
   mounted () {
     this.chart = this.$echarts.init(document.getElementById('line3'))
-    // const option = genOption(this.chartData, this.colors)
     this.chart.setOption(this.genOption())
   },
   methods: {
