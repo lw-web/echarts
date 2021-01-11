@@ -1,5 +1,6 @@
 <template>
   <div class="bar">
+    <div><Bar2 /></div>
     <div><Bar1 /></div>
     <div>2</div>
     <div>3</div>
@@ -14,10 +15,12 @@
 </template>
 
 <script>
+import Bar2 from './bar2'
 import Bar1 from './bar1'
 export default {
   name: 'bar',
   components: {
+    Bar2,
     Bar1
   }
 }
