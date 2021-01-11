@@ -34,6 +34,11 @@ const routes = [
         path: 'radar',
         name: 'radar',
         component: () => import('@/views/radar/index.vue')
+      },
+      {
+        path: 'bar',
+        name: 'bar',
+        component: () => import('@/views/bar/index.vue')
       }
     ]
   }
