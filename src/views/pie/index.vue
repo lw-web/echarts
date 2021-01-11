@@ -1,5 +1,6 @@
 <template>
   <div class="pie">
+    <div><Pie2 /></div>
     <div><Pie1 /></div>
     <div>2</div>
     <div>3</div>
@@ -14,10 +15,12 @@
 </template>
 
 <script>
+import Pie2 from './pie2'
 import Pie1 from './pie1'
 export default {
   name: 'Pie',
   components: {
+    Pie2,
     Pie1
   }
 }
