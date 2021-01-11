@@ -1,5 +1,6 @@
 <template>
   <div class="guage">
+    <div><Guage2 /></div>
     <div><Guage1 /></div>
     <div>2</div>
     <div>3</div>
@@ -14,10 +15,12 @@
 </template>
 
 <script>
+import Guage2 from './guage2'
 import Guage1 from './guage1'
 export default {
   name: 'Guage',
   components: {
+    Guage2,
     Guage1
   }
 }
