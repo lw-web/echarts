@@ -39,6 +39,23 @@ const routes = [
         path: 'bar',
         name: 'bar',
         component: () => import('@/views/bar/index.vue')
+      },
+      {
+        path: 'gaode',
+        name: 'gaode',
+        component: () => import('@/views/gaode/index.vue')
+      }
+    ]
+  },
+  {
+    path: '/gaode',
+    name: 'layout',
+    component: EchartsLayout,
+    children: [
+      {
+        path: 'gaode',
+        name: 'gaode',
+        component: () => import('@/views/gaode/index.vue')
       }
     ]
   }

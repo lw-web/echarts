@@ -17,6 +17,11 @@
             <a-menu-item key="radar">radar</a-menu-item>
             <a-menu-item key="bar">bar</a-menu-item>
           </a-sub-menu>
+          <a-sub-menu key="map">
+            <span slot="title">高德地图</span>
+            <a-menu-item key="gaode">地图</a-menu-item>
+
+          </a-sub-menu>
         </a-menu>
       </a-layout-sider>
       <router-view></router-view>

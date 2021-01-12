@@ -1,3 +1,6 @@
 module.exports = {
-  outputDir: 'echarts'
+  outputDir: 'echarts',
+  externals: {
+    AMap: 'AMap'
+  }
 }
