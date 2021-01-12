@@ -1,11 +1,9 @@
 <template>
   <div class="pie">
+    <div><Pie4 /></div>
     <div><Pie3 /></div>
     <div><Pie2 /></div>
     <div><Pie1 /></div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
     <div>5</div>
     <div>6</div>
     <div>7</div>
@@ -16,12 +14,14 @@
 </template>
 
 <script>
+import Pie4 from './pie4'
 import Pie3 from './pie3'
 import Pie2 from './pie2'
 import Pie1 from './pie1'
 export default {
   name: 'Pie',
   components: {
+    Pie4,
     Pie3,
     Pie2,
     Pie1

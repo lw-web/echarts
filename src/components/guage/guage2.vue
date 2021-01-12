@@ -45,7 +45,10 @@ const option = {
       clockwise: false,
       startAngle: '269.999',
       endAngle: '-90',
-      splitNumber: 20,
+      splitNumber: 30,
+      detail: {
+        show: false
+      },
       pointer: {
         show: false
       },
@@ -61,10 +64,10 @@ const option = {
       },
       splitLine: {
         show: true,
-        length: 10,
+        length: 15,
         lineStyle: {
           color: '#0E192D',
-          width: 5
+          width: 2
         }
       },
       axisLabel: {

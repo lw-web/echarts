@@ -24,7 +24,7 @@ function genOption (data, colors) {
         endAngle: '-30',
         splitNumber: 4,
         detail: {
-          offsetCenter: [0, '-15%'],
+          offsetCenter: [0, 0],
           formatter: `{a|${data * 100}}{c|%}`,
           rich: {
             a: {
@@ -56,7 +56,7 @@ function genOption (data, colors) {
         },
         splitLine: {
           show: true,
-          length: 15,
+          length: 25,
           lineStyle: {
             color: '#12181f',
             width: 4
