@@ -3,7 +3,7 @@
     <div id="pie3"></div>
     <div class="chart-content"><img src="@/images/dbl.png" alt="" /> <span class="text">达标率</span></div>
     <div class="content">
-      <div class="item" v-for="item in legend" :key="item">
+      <div class="item" v-for="item in legend" :key="item.color">
         <div class="line" :style="{ backgroundColor: item.color }"></div>
         <div>
           <div class="top">{{ item.name }}</div>
