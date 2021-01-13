@@ -10,6 +10,7 @@ import 'echarts-liquidfill'
 
 import echarts from 'echarts'
 echarts.registerMap('china', require('./json/china.json'))
+echarts.registerMap('shanxi', require('./json/shanxi.json'))
 
 Vue.prototype.$echarts = echarts
 Vue.use(Antd)

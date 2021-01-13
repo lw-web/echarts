@@ -39,7 +39,14 @@ const routes = [
         path: 'bar',
         name: 'bar',
         component: () => import('@/views/bar/index.vue')
-      },
+      }
+    ]
+  },
+  {
+    path: '/map',
+    name: 'layout',
+    component: EchartsLayout,
+    children: [
       {
         path: 'gaode',
         name: 'gaode',
@@ -48,14 +55,14 @@ const routes = [
     ]
   },
   {
-    path: '/gaode',
+    path: '/comp',
     name: 'layout',
     component: EchartsLayout,
     children: [
       {
-        path: 'gaode',
-        name: 'gaode',
-        component: () => import('@/views/gaode/index.vue')
+        path: 'num',
+        name: 'num',
+        component: () => import('@/views/num/index.vue')
       }
     ]
   }

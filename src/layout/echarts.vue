@@ -20,7 +20,10 @@
           <a-sub-menu key="map">
             <span slot="title">高德地图</span>
             <a-menu-item key="gaode">地图</a-menu-item>
-
+          </a-sub-menu>
+          <a-sub-menu key="comp">
+            <span slot="title">小组件</span>
+            <a-menu-item key="num">滚动数字</a-menu-item>
           </a-sub-menu>
         </a-menu>
       </a-layout-sider>
@@ -44,8 +47,9 @@ export default {
     this.activePage = page
   },
   methods: {
-    handleClick ({ key }) {
-      this.$router.push('/echarts/' + key)
+    handleClick ({ keyPath }) {
+      const [page, module] = keyPath
+      this.$router.push(`/${module}/` + page)
     }
   }
 }
