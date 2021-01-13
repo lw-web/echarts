@@ -25,6 +25,10 @@
             <span slot="title">小组件</span>
             <a-menu-item key="num">滚动数字</a-menu-item>
           </a-sub-menu>
+          <a-sub-menu key="theme">
+            <span slot="title">换肤</span>
+            <a-menu-item key="color">选颜色</a-menu-item>
+          </a-sub-menu>
         </a-menu>
       </a-layout-sider>
       <router-view></router-view>

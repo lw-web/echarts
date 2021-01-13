@@ -65,6 +65,18 @@ const routes = [
         component: () => import('@/views/num/index.vue')
       }
     ]
+  },
+  {
+    path: '/theme',
+    name: 'layout',
+    component: EchartsLayout,
+    children: [
+      {
+        path: 'color',
+        name: 'color',
+        component: () => import('@/views/color/index.vue')
+      }
+    ]
   }
 ]
 
