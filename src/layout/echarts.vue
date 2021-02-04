@@ -18,7 +18,7 @@
             <a-menu-item key="bar">bar</a-menu-item>
           </a-sub-menu>
           <a-sub-menu key="map">
-            <span slot="title">高德地图</span>
+            <span slot="title">高德地图-vercel</span>
             <a-menu-item key="gaode">地图</a-menu-item>
           </a-sub-menu>
           <a-sub-menu key="comp">
