@@ -22,7 +22,7 @@
             <a-menu-item key="gaode">地图</a-menu-item>
           </a-sub-menu>
           <a-sub-menu key="comp">
-            <span slot="title">小组件</span>
+            <span slot="title">小组件 11111</span>
             <a-menu-item key="num">滚动数字</a-menu-item>
           </a-sub-menu>
           <a-sub-menu key="theme">
